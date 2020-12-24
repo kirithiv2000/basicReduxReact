@@ -1,7 +1,7 @@
-const initialState = {
+const initialstate = {
     counter:0
 }
-const rootReducer=(state=initialState,action)=>{
+const rootReducer = (state = initialstate,action) =>{
     switch(action.type){
         case "Incriment":
             return {
@@ -14,5 +14,4 @@ const rootReducer=(state=initialState,action)=>{
         default:return state
     }
 }
-
 export default rootReducer;
